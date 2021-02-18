@@ -1,0 +1,510 @@
+@font-face
+{
+	src: url('HelveticaNeue-Heavy.otf');
+	font-family:'navFont';
+}
+
+@font-face {
+	src: url('HelveticaNeue-Medium.otf');
+	font-family:'srednjiFont'
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+
+a {
+	text-decoration:none;
+	color:#666;
+}
+
+a:hover {
+	color:red;
+}
+
+
+
+ul {
+	list-style-type:none;
+}
+
+.centar {
+	margin:0px auto;
+	width:1200px;
+}
+
+.cistac {
+	clear: both;
+}
+
+/* Heder */
+#header {
+	width:100%;
+	height:100px;
+	background-color:#FFF;
+	position: fixed;
+	z-index:2;
+	box-shadow: 3px 3px 5px #666;
+}
+
+#navigacija {
+	float: right;
+}
+
+#logo {
+	float:left;
+	height: inherit;
+	margin:5px 0px;
+}
+
+#logo img {
+	width:110px;
+	height:90px;
+	color: #FFF
+}
+
+#navigacija li {
+	float: left;
+	margin-left:50px;
+	display:block;
+	margin-top: 60px;
+}
+
+#navigacija a {
+	font-family:'Open Sans';
+	font-size: 16px; 
+	
+	color: #333;
+}
+#navigacija .aktivanLink {
+	border-top:3px solid #333;
+	margin-top:5px;
+	padding-top:52px;
+	
+}
+
+/* Index(pocetna) */
+#slajder {
+	background-image: url('../img/wade.jpg');
+	width:100%;
+	box-sizing: border-box;
+	background-repeat:no-repeat;
+	height:600px;
+	background-size: cover; 
+}
+#levoIndex {
+	float:left;
+	width:300px;
+	height:100%;
+	margin-top:120px;
+}
+
+.indexBlok {
+	width:100%;
+	height:130px;
+}
+
+.indexBlok img {
+	width:250px;
+	height:250px;
+	margin-left:25px;
+}
+
+.indexBlok h1 {
+	font-family:'navFont';
+	font-size:35px;
+	color:#FFF;
+	margin-top:110px;
+	margin-left:25px;
+	margin-bottom:3px;
+}
+
+.indexBlok p {
+	font-family:'srednjiFont';
+	color: red;
+	
+	font-size:22px;
+	margin-left:55px;
+}
+
+.indexBlok #btn {
+	margin-left:75px;
+	color:#FFF;
+}
+
+.indexBlok #btn:hover {
+	color:#333;
+	background: #FFF;
+	border: 2px solid #666;
+	transform: all ease-in-out;
+	transition:0.5s;
+}
+
+#btn {
+	border: 2px solid red;
+	border-radius:6px;
+	background:none;
+	font-size:24px;
+	font-family: 'navFont';
+	cursor:pointer;
+	width:150px;
+	height:60px;
+	color:red;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	text-align:center;
+}
+
+#galerija {
+	width:100%;
+	height:900px;
+}
+
+.red {
+	width: 1200px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: space-around;
+}
+
+.galBlok {
+	width: 500px;
+	min-height: 300px;
+	margin-bottom: 30px;
+	background-color: #333;
+	font-size: 20px;
+}
+
+.galBlok figcaption {
+	padding:10px 0px;
+	color:#FFF;
+	font-family:'navFont';
+	font-size:15px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+/* FUTER */
+
+#futer {
+	width: 100%;
+	background-color: #373737;
+	padding: 30px 0px;
+	border-top: 4px solid #f6f6f6;
+	color: #fff;
+	margin-top: 20px;
+}
+
+#copyright {
+	float: left;
+	margin-top: 15px;
+}
+
+#copyright p {
+	font-family: 'Open Sans';
+}
+
+#social-network {
+	float: right;
+}
+
+#social-network li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+#social-network li img {
+	width:30px;
+	height:30px;
+}
+	/* Biografija */
+	
+#bioSlajder {
+	min-height: 900px;
+	background-image: url('../img/wp.jpg');
+	padding-top:100px;
+	width:100%;
+	box-sizing:border-box;
+	background-repeat: no-repeat;
+}
+
+#podaci {
+	float:right;
+	height:100%;
+	width:250px;
+	margin-top:80px;
+	margin-right:270px;
+}
+.blok h2 {
+	font-size:18px;
+	font-family:'Open Sans';
+	color: #FFF;
+	font-weight:bold;
+}
+
+.blok {
+	width:250px;
+	height:70px;
+	margin-bottom:5px;
+	margin-left:15px;
+}
+
+.blok img {
+	float:left;
+	margin-right:3px;
+}
+
+.blok p {
+	color:red;
+	font-family:'Open Sans';
+	font-size:16px;
+}
+
+#dwade {
+	width: 650px;
+	height:400px;
+	float:left;
+}
+
+#dwade h1 {
+	font-family:'srednjiFont';
+	font-size:36px;
+	color:#FFF;
+	margin-top:40px;
+	margin-bottom:5px;
+	margin-left:20px;
+	border-bottom:1px solid #f2f2f2;
+}
+
+#dwade h2 {
+	font-family: 'Open Sans';
+	font-size:14px;
+	color: red;
+	margin-top: 5px;
+	text-transform:uppercase;
+	margin-left:20px;
+	font-weight:600;
+}
+
+#dwade p , #bioDW p {
+	font-family: 'Open Sans';
+	font-size:18px;
+	color: #FFF;
+	text-align:justify;
+	margin-top:10px;
+	margin-left:20px;
+}
+
+#bioDW {
+	float:left;
+	height:300px;
+	width: 880px;
+}
+
+#bioDW h2 {
+	font-family: 'Open Sans';
+	font-size:14px;
+	color: red;
+	text-transform:uppercase;
+	margin-left:20px;
+	font-weight:600;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+#biograf {
+	width:100%;
+	height:1450px;
+}	
+
+#biograf h1 {
+	font-family:'srednjiFont';
+	font-size:36px;
+	color: #333;
+	margin-top:15px;
+	text-align:center;
+}
+
+#biograf h2 {
+	font-family: 'Open Sans';
+	font-size:16px;
+	color: red;
+	text-transform:uppercase;
+	margin-left:20px;
+	font-weight:600;
+	border-bottom: 1px solid #333;
+	margin-top:15px;
+	width:50%;
+}
+
+#biograf p {
+	font-family: 'Open Sans';
+	font-size:18px;
+	color: #333;
+	text-align:justify;
+	margin-top:10px;
+	margin-left:20px;
+}
+
+
+	
+	/* Patike */
+	
+#patike {
+	width:100%;
+}
+
+#wow {
+	padding:120px 300px;
+	width:100%;
+	height:200px;
+}
+#wowSlika {
+	width:100px;
+	margin:0px auto;	
+}
+
+#wowSlika img {
+	width:100px;
+	height:100px;
+	margin:0px auto;
+}
+#wowText {
+	font-family: 'navFont';
+	font-size:16px;
+	color: #333;
+	margin-top:10px;
+	text-align:center;
+
+}
+
+.patRed {
+	width:100%;
+	height:260px;
+	margin:50px 0px;
+}
+
+.levoSlika {
+	float:left;
+	width:200px;
+	height:200px;
+}
+.patRed img {
+	width: 400px;
+	height: 250px;
+}
+
+.desnoTekst {
+	float:right;
+	width:750px;
+	height:260px;
+}
+.desnoTekst h1 {
+	float:right;
+	font-family: 'srenjiFont';
+	font-size:30px;
+	color:red;
+	margin-top:40px;
+}
+
+.desnoTekst p {
+	float:left;
+	font-family: 'Open Sans';
+	font-size:24px;
+	text-align:justify;
+	color:#333;
+	margin-top:5px;
+}
+.desnoSlika {
+	float:right;
+	width:200px;
+	height:200px;
+	margin-right:200px;
+}	
+
+.levoTekst {
+	float:left;
+	width:750px;
+	height:260px;
+}
+.levoTekst h1 {
+	float:left;
+	font-family: 'srenjiFont';
+	font-size:30px;
+	color:red;
+	margin-top:40px;
+}
+
+.levoTekst p {
+	float:left;
+	font-family: 'Open Sans';
+	font-size:24px;
+	text-align:justify;
+	color:#333;
+	margin-top:5px;
+}
+
+#svePatike {
+	height:100%;
+	width:100%;
+	margin:100px 0px;
+}
+	/* O AUTORU */
+	
+#autor {
+	height:700px;
+	width:100%;
+}	
+
+#autorLevo {
+	width:500px;
+	height:500px;
+	margin-top:150px;
+	float:left;
+}
+
+#autorLogo img{
+	margin-left:10px;
+	margin-bottom:20px;
+	width:80px;
+	height:100;
+}
+#autorTekst {
+	float:left;
+	width:500px;
+}
+
+#autorTekst h1 {
+	font-family: 'Open Sans';
+	color: #000;
+	margin-bottom:10px;
+	font-size:30px;
+	margin-left:10px;
+}
+
+#autorSlika {
+	float:right;
+}
+
+#autorSlika img{
+	width: 400px;
+	height:400px;
+	margin-top:150px;
+	margin-right:100px;
+	border-radius:7px;
+	box-shadow:3px 3px 5px #666;
+}
+
+#autorTekst p	 {
+	font-family: 'Open Sans';
+	color:#000;
+	margin-bottom:10px;
+	font-size:26px;
+	margin-left:10px;
+	padding-top:20px;
+	text-align:left;
+}
+
